@@ -284,16 +284,15 @@ function buildChoroplethLegend() {
       politics = ['VVD','CDA','PVV','D66','SP','GL','PvdA','CU','50Plus','PvdD','SGP','FvD','DENK'];
       for (var i = 0; i < config.choropleth.length; i++) {
         div.innerHTML +=
-        '<i style="background:' + config.choropleth[i] + '"></i> ' +
-        politics[i] + '<br>';
+        '<i style="background:' + config.choropleth[i] + '"></i> '+politics[i] + '<br>';
       }
       return div;
     } else {
       if (config.choropleth.length == 14 ) {
-        politics = ['VVD','CDA','PVV','D66','SP','GL','PvdA','CU','50Plus','PvdD','SGP','FvD','DENK','Non-voters'];
+        politics = ['VVD','CDA','PVV','D66','SP','GL','PvdA','CU','50Plus','PvdD','SGP','FvD','DENK','NV'];
         for (var i = 0; i < config.choropleth.length; i++) {
           div.innerHTML +=
-          '<i style="background:' + config.choropleth[i] + '"></i> ' +
+          '<i style="background:' + config.choropleth[i] + '"></i>' +
           politics[i] + '<br>';
         }
         return div;
@@ -308,7 +307,7 @@ function buildChoroplethLegend() {
             lowerStr = util.numberWithCommas(Math.round(lower * 100) / 100);
           }
           div.innerHTML +=
-            '<i style="background:' + config.choropleth[i] + '"></i> ' +
+            '<i style="background:' + config.choropleth[i] + '"></i>' +
             lowerStr + ' to ' + upperStr + '<br>';
         }
 
