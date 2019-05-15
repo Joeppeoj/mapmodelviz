@@ -37,7 +37,12 @@ var findChoropleth = function(choroplethString) {
   if (choroplethString && choroplethString != "") {
     var bracket = choroplethString.indexOf("[")
     var base = choroplethString.substring(0,bracket);
-    var numColors = parseInt(choroplethString.substring(bracket+1, bracket+2));
+    var lencol = parseInt(choroplethString.substring(bracket+1, bracket+3));
+    if (lencol > 9) {
+    var numColors = parseInt(choroplethString.substring(bracket+1, bracket+3));
+    } else {
+      var numColors = parseInt(choroplethString.substring(bracket+1, bracket+2));
+    }
     return choroplethColors[base][numColors];
   }
   return null;
@@ -717,8 +722,8 @@ var processData = function(allText, geoAreaId) {
     displayMessage('Unable to find the common geo area id in model data, so could not properly process it. Visuals will not be displayed for current primary.');
     return {timeSeries: timeSeries, data: null};
   }
-
-  for (var i=1; i<allTextLines.length; i++) {
+  
+  for (var i=1; i<allTextLines.length-1; i++) {
     var data = allTextLines[i].split(',');
 
     if(!(data[geoAreaIdx] in parsed)){

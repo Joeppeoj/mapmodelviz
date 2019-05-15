@@ -324,8 +324,8 @@ const choroplethColors = {
     6: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f"],
     7: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f","#e5c494"],
     8: ["#66c2a5","#fc8d62","#8da0cb","#e78ac3","#a6d854","#ffd92f","#e5c494","#b3b3b3"]
-  },Set3: {
-    name: 'Set 3 - Pastel',
+  },Politics: {
+    name: 'Politics - Pastel',
     3: ["#8dd3c7","#ffffb3","#bebada"],
     4: ["#8dd3c7","#ffffb3","#bebada","#fb8072"],
     5: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3"],
@@ -334,8 +334,8 @@ const choroplethColors = {
     8: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5"],
     9: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9"],
     10: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd"],
-    11: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5"],
-    12: ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"]
+    13: ["#2171b5","#41b6c4","#034e7b","#41ab5d","#ef3b2c","#238b45","#cb181d","#084594","#88419d","#005a32","#2171b5","#6e016b","#6baed6"],
+    14: ["#2171b5","#41b6c4","#034e7b","#41ab5d","#ef3b2c","#238b45","#cb181d","#084594","#88419d","#005a32","#2171b5","#6e016b","#6baed6","#eff3ff"]
   }
 };
 

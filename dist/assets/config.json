@@ -1,79 +1,61 @@
 {
-  "modelName": "World Test Model",
+  "modelName": "Politics",
   "allowFileUpload": true,
-  "activePolicyName": "Energy Demand",
+  "activePolicyName": "Biggest Party",
 
   "playbackSpeed": 1000,
 
   "jsonData": [{
-    "name": "Energy Demand",
+    "name": "Biggest Party",
     "scale": "linear",
     "file": {
-      "name": "worlddata.csv",
-      "url": "assets/worlddata.csv"
+      "name": "newdata.csv",
+      "url": "assets/newdata.csv"
     },
     "geoAreaId": "id",
-    "mappedProperty": "total dom energy demand",
-    "choroplethString": "GnBu[5]",
+    "mappedProperty": "Biggest Party",
+    "choroplethString": "Politics[14]",
     "displayStatus": "primary",
     "geoJSON": {
       "file": {
-        "name": "countries.geojson",
-        "url": "assets/lowrescountries.geojson"
+        "name": "municipalities.geojson",
+        "url": "assets/municipalities.geojson"
       },
       "text": "name"
     }
   },{
-    "name": "Energy Demand Multiplied",
+    "name": "Total votes",
     "scale": "linear",
     "file": {
-      "name": "multiplied.csv",
-      "url": "assets/multiplied.csv"
+      "name": "newdata.csv",
+      "url": "assets/newdata.csv"
     },
     "geoAreaId": "id",
-    "mappedProperty": "total dom energy demand",
-    "choroplethString": "GnBu[5]",
+    "mappedProperty": "Total",
+    "choroplethString": "GnBu[9]",
     "displayStatus": "secondary",
     "geoJSON": {
       "file": {
-        "name": "countries.geojson",
-        "url": "assets/lowrescountries.geojson"
+        "name": "municipalities.geojson",
+        "url": "assets/municipalities.geojson"
       },
       "text": "name"
     }
   },{
-    "name": "Energy Demand Doubled",
-    "scale": "logarithmic",
+    "name": "per Neutral",
+    "scale": "linear",
     "file": {
-      "name": "doubled.csv",
-      "url": "assets/doubled.csv"
+      "name": "newdata.csv",
+      "url": "assets/newdata.csv"
     },
     "geoAreaId": "id",
-    "mappedProperty": "total dom energy demand",
-    "choroplethString": "GnBu[5]",
+    "mappedProperty": "per Neutral",
+    "choroplethString": "RdPu[9]",
     "displayStatus": "secondary",
     "geoJSON": {
       "file": {
-        "name": "countries.geojson",
-        "url": "assets/lowrescountries.geojson"
-      },
-      "text": "name"
-    }
-  },{
-    "name": "Renewables",
-    "scale": "linear",
-    "file": {
-      "name": "worlddata.csv",
-      "url": "assets/worlddata.csv"
-    },
-    "geoAreaId": "id",
-    "mappedProperty": "pc renewables consumption of total energy consumption",
-    "choroplethString": "RdPu[7]",
-    "displayStatus": "off",
-    "geoJSON": {
-      "file": {
-        "name": "countries.geojson",
-        "url": "assets/lowrescountries.geojson"
+        "name": "municipalities.geojson",
+        "url": "assets/municipalities.geojson"
       },
       "text": "name"
     }

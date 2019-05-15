@@ -279,22 +279,42 @@ function buildChoroplethLegend() {
 
   legend.onAdd = function(map) {
     var div = L.DomUtil.create('div', 'info legend');
-
-    for (var i = 0; i < config.choropleth.length; i++) {
-      var lower = config.choroplethRanges[i];
-      var upper = config.choroplethRanges[i + 1];
-      var lowerStr = lower.toExponential(2);
-      var upperStr = upper.toExponential(2);
-
-      if (upper > 10 && lower <=1) {
-        lowerStr = util.numberWithCommas(Math.round(lower * 100) / 100);
-      }
-      div.innerHTML +=
+    var politics = []; 
+    if (config.choropleth.length == 13 ) {
+      politics = ['VVD','CDA','PVV','D66','SP','GL','PvdA','CU','50Plus','PvdD','SGP','FvD','DENK'];
+      for (var i = 0; i < config.choropleth.length; i++) {
+        div.innerHTML +=
         '<i style="background:' + config.choropleth[i] + '"></i> ' +
-        lowerStr + ' to ' + upperStr + '<br>';
-    }
+        politics[i] + '<br>';
+      }
+      return div;
+    } else {
+      if (config.choropleth.length == 14 ) {
+        politics = ['VVD','CDA','PVV','D66','SP','GL','PvdA','CU','50Plus','PvdD','SGP','FvD','DENK','Non-voters'];
+        for (var i = 0; i < config.choropleth.length; i++) {
+          div.innerHTML +=
+          '<i style="background:' + config.choropleth[i] + '"></i> ' +
+          politics[i] + '<br>';
+        }
+        return div;
+      } else {
+        for (var i = 0; i < config.choropleth.length; i++) {
+          var lower = config.choroplethRanges[i];
+          var upper = config.choroplethRanges[i + 1];
+          var lowerStr = lower.toExponential(2);
+          var upperStr = upper.toExponential(2);
 
-    return div;
+          if (upper > 10 && lower <=1) {
+            lowerStr = util.numberWithCommas(Math.round(lower * 100) / 100);
+          }
+          div.innerHTML +=
+            '<i style="background:' + config.choropleth[i] + '"></i> ' +
+            lowerStr + ' to ' + upperStr + '<br>';
+        }
+
+        return div;
+      }
+    }
   };
   legend.addTo(config.map);
 };
