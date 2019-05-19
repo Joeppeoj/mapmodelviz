@@ -9,8 +9,8 @@
     "name": "Biggest Party",
     "scale": "linear",
     "file": {
-      "name": "newdata.csv",
-      "url": "assets/newdata.csv"
+      "name": "newerdata2.csv",
+      "url": "assets/newerdata2.csv"
     },
     "geoAreaId": "id",
     "mappedProperty": "Biggest Party",
@@ -24,14 +24,14 @@
       "text": "name"
     }
   },{
-    "name": "Total votes",
+    "name": "Percentage Left",
     "scale": "linear",
     "file": {
-      "name": "newdata.csv",
-      "url": "assets/newdata.csv"
+      "name": "newerdata.csv",
+      "url": "assets/newerdata.csv"
     },
     "geoAreaId": "id",
-    "mappedProperty": "Total",
+    "mappedProperty": "Per Left MUN",
     "choroplethString": "GnBu[9]",
     "displayStatus": "secondary",
     "geoJSON": {
@@ -42,14 +42,32 @@
       "text": "name"
     }
   },{
-    "name": "per Neutral",
+    "name": "Percentage Right",
     "scale": "linear",
     "file": {
-      "name": "newdata.csv",
-      "url": "assets/newdata.csv"
+      "name": "newerdata.csv",
+      "url": "assets/newerdata.csv"
     },
     "geoAreaId": "id",
-    "mappedProperty": "per Neutral",
+    "mappedProperty": "Per Right MUN",
+    "choroplethString": "GnBu[9]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "municipalities.geojson",
+        "url": "assets/municipalities.geojson"
+      },
+      "text": "name"
+    }
+  },{
+    "name": "Percentage neutral",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata.csv",
+      "url": "assets/newerdata.csv"
+    },
+    "geoAreaId": "id",
+    "mappedProperty": "Per neut MUN",
     "choroplethString": "RdPu[9]",
     "displayStatus": "secondary",
     "geoJSON": {
