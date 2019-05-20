@@ -300,8 +300,8 @@ function buildChoroplethLegend() {
         for (var i = 0; i < config.choropleth.length; i++) {
           var lower = config.choroplethRanges[i];
           var upper = config.choroplethRanges[i + 1];
-          var lowerStr = lower.toExponential(2);
-          var upperStr = upper.toExponential(2);
+          var lowerStr = lower.toFixed(3);
+          var upperStr = upper.toFixed(3); // .toExponential(2)
 
           if (upper > 10 && lower <=1) {
             lowerStr = util.numberWithCommas(Math.round(lower * 100) / 100);

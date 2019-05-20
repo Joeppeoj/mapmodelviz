@@ -218,11 +218,11 @@ var getFormattedNumber = function(value) {
   } else if (value >= 10) {
     var rounded = (Math.round(value * 100) / 100)
     return numberWithCommas(rounded);
-  } else if (value >= 1) {
+  } else if (value > 1) {
     var rounded = (Math.round(value * 1000) / 1000)
     return numberWithCommas(rounded);
   } else {
-    var rounded = (Math.round(value) * 10000 / 10000)
+    var rounded = value//(Math.round(value) * 10000 / 10000)
     return numberWithCommas(rounded);
   }
 }
@@ -368,7 +368,7 @@ var buildChartData = function(properties) {
       if (dataset[config.geoAreaId] === selectedFeature.properties[config.geoAreaId]) {
         for (var key in dataset) {
           if (key in properties && Array.isArray(dataset[key]) && dataset[key].length === config.timeSeries.length) {
-            var startingColorIdx = Math.floor((Math.random() * colors.length));
+            var startingColorIdx = Math.floor((Math.random() * colors.length)); //color line
             var dataVals = [getDataset(config.activePolicy.name,colors[startingColorIdx],dataset[key])];
 
             secondaryDatasets.forEach(function(secondset, index) {
