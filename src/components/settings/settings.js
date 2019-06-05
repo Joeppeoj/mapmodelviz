@@ -723,7 +723,7 @@ var processData = function(allText, geoAreaId) {
     return {timeSeries: timeSeries, data: null};
   }
   
-  for (var i=1; i<allTextLines.length-1; i++) {
+  for (var i=1; i<allTextLines.length - 1; i++) {
     var data = allTextLines[i].split(',');
 
     if(!(data[geoAreaIdx] in parsed)){

@@ -44,6 +44,7 @@ export function findChoroplethMinMax() {
   }
   config.choroplethDetails.min = min;
   config.choroplethDetails.max = max;
+  if (config.choroplethDetails.max == 13) {config.choroplethDetails.max = 14};
 };
 
 export function findChoroplethMinMaxOverall() {
@@ -70,14 +71,14 @@ export function findChoroplethMinMaxOverall() {
     var currMin = Math.min.apply(Math, activeData);
     var currMax = Math.max.apply(Math, activeData);
     if (isNaN(currMin)) {
-      console.log('Invalid min number, not considering.')
+      //console.log('Invalid min number, not considering.')
     } else {
       if (currMin < min) {
         min = currMin;
       }
     }
     if (isNaN(currMax)) {
-      console.log('Invalid max number, not considering.')
+      //console.log('Invalid max number, not considering.')
     } else {
       if (currMax > max) {
         max = currMax;
@@ -86,7 +87,7 @@ export function findChoroplethMinMaxOverall() {
   }
   config.choroplethDetails.min = min;
   config.choroplethDetails.max = max;
-
+  if (config.choroplethDetails.max == 13) {config.choroplethDetails.max = 14};
   // setChoroplethRanges();
 };
 
@@ -103,6 +104,7 @@ export function setChoroplethRanges() {
 
   var numColors = config.choropleth.length;
   var range = config.choroplethDetails.max - config.choroplethDetails.min;
+  if (range == 12) {range = 13};
 
   if (config.activePolicy.scale === 'linear') {
     var intervalSize = (range+0.0)/(numColors);
@@ -127,6 +129,7 @@ export function setChoroplethBuckets() {
   if (config.choropleth !== null) {
     var numColors = config.choropleth.length;
     var range = config.choroplethDetails.max - config.choroplethDetails.min;
+    if (range == 12) {range = 13};
     var intervalSize = (range+0.0)/(numColors);
     var currIdx = config.currentIndex;
     for (var key in config.activePolicy.data) {
@@ -141,11 +144,12 @@ export function setChoroplethBuckets() {
         return;
       }
       var value = parseFloat(config.activePolicy.data[key][config.mappedProperty][currIdx]);
+      if (isNaN(value)) {config.activePolicy.data[key]['choroplethNum'] == -1 } else {
       if (value < config.choroplethDetails.max) {
         choroplethNum = Math.floor((value - config.choroplethDetails.min)/intervalSize);
       }
       config.activePolicy.data[key]['choroplethNum'] = choroplethNum;
-    }
+    }}
   } else {
     config.choroplethDetails = {
       min: -Infinity,

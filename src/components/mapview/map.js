@@ -42,7 +42,7 @@ var getFillColor = function(feature) {
     // choroplethNum = choroplethNum ? choroplethNum : -1;
     if (choroplethNum == -1) {
       return {
-        fillColor: "#ffffff",
+        fillColor: "#fbf4f4",
         weight:0,
         opacity:0,
         fillOpacity: 0
@@ -57,7 +57,7 @@ var getFillColor = function(feature) {
     }
   } else {
     return {
-      fillColor: "#ffffff",
+      fillColor: "#fbf4f4",
       weight:1,
       opacity:1,
       fillOpacity: 0
@@ -217,7 +217,7 @@ export function addGeoJSONLayer() {
     url = URL.createObjectURL(config.activePolicy.geoJSON.file);
   }
   $.getJSON(url, function(json) {
-    // console.log('successfully loaded GeoJSON');
+    console.log('successfully loaded GeoJSON');
   })
   .done(function(json) {
     details.showJsonLoaded();

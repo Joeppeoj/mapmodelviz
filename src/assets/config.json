@@ -1,7 +1,7 @@
 {
   "modelName": "Politics",
   "allowFileUpload": true,
-  "activePolicyName": "Biggest Party",
+  "activePolicyName": "Politics",
 
   "playbackSpeed": 1000,
 
@@ -9,55 +9,55 @@
     "name": "Biggest Party",
     "scale": "linear",
     "file": {
-      "name": "newerdata2.csv",
-      "url": "assets/newerdata2.csv"
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
     },
-    "geoAreaId": "id",
-    "mappedProperty": "Biggest Party",
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "biggest",
     "choroplethString": "Politics[14]",
     "displayStatus": "primary",
     "geoJSON": {
       "file": {
-        "name": "municipalities.geojson",
-        "url": "assets/municipalities.geojson"
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
       },
-      "text": "name"
+      "text": "BU_NAAM"
     }
   },{
-    "name": "Percentage Left",
+    "name": "Per Biggest party",
     "scale": "linear",
     "file": {
-      "name": "newerdata.csv",
-      "url": "assets/newerdata.csv"
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
     },
-    "geoAreaId": "id",
-    "mappedProperty": "Per Left MUN",
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "max",
+    "choroplethString": "YlOrRd[9]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Leefbarometer 16",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "RLBMTR16",
     "choroplethString": "GnBu[9]",
     "displayStatus": "secondary",
     "geoJSON": {
       "file": {
-        "name": "municipalities.geojson",
-        "url": "assets/municipalities.geojson"
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
       },
-      "text": "name"
-    }
-  },{
-    "name": "Percentage Right",
-    "scale": "linear",
-    "file": {
-      "name": "newerdata.csv",
-      "url": "assets/newerdata.csv"
-    },
-    "geoAreaId": "id",
-    "mappedProperty": "Per Right MUN",
-    "choroplethString": "GnBu[9]",
-    "displayStatus": "secondary",
-    "geoJSON": {
-      "file": {
-        "name": "municipalities.geojson",
-        "url": "assets/municipalities.geojson"
-      },
-      "text": "name"
+      "text": "BU_NAAM"
     }
   },{
     "name": "Percentage neutral",
