@@ -1,0 +1,225 @@
+{
+  "modelName": "Polarisation",
+  "allowFileUpload": true,
+  "activePolicyName": "Votings",
+
+  "playbackSpeed": 1000,
+
+  "jsonData": [{
+    "name": "polarisation local-global",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata4.csv",
+      "url": "assets/newerdata4.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "polarisation danger local inter", 
+    "choroplethString": "YlOrRd[9]",
+    "displayStatus": "primary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+    },{
+      "name": "polarisation left-right",
+      "scale": "linear",
+      "file": {
+        "name": "newerdata4.csv",
+        "url": "assets/newerdata4.csv"
+      },
+      "geoAreaId": "WK_CODE",
+      "mappedProperty": "polarisation danger left right",
+      "choroplethString": "YlOrRd[9]",
+      "displayStatus": "secondary",
+      "geoJSON": {
+        "file": {
+          "name": "UpdatedWijk.json",
+          "url": "assets/UpdatedWijk.json"
+        },
+        "text": "WK_NAAM"
+      } 
+  },{
+    "name": "polarisation fat-ega",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata4.csv",
+      "url": "assets/newerdata4.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "polarisation danger fat ega",
+    "choroplethString": "YlOrRd[9]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    } 
+},{
+  "name": "polarisation ind-col",
+  "scale": "linear",
+  "file": {
+    "name": "newerdata4.csv",
+    "url": "assets/newerdata4.csv"
+  },
+  "geoAreaId": "WK_CODE",
+  "mappedProperty": "polarisation danger ind col",
+  "choroplethString": "YlOrRd[9]",
+  "displayStatus": "secondary",
+  "geoJSON": {
+    "file": {
+      "name": "UpdatedWijk.json",
+      "url": "assets/UpdatedWijk.json"
+    },
+    "text": "WK_NAAM"
+  } 
+},{
+  "name": "individualism",
+  "scale": "linear",
+  "file": {
+    "name": "newerdata4.csv",
+    "url": "assets/newerdata4.csv"
+  },
+  "geoAreaId": "WK_CODE",
+  "mappedProperty": "ac tot ind wijk",
+  "choroplethString": "YlOrRd[9]",
+  "displayStatus": "secondary",
+  "geoJSON": {
+    "file": {
+      "name": "UpdatedWijk.json",
+      "url": "assets/UpdatedWijk.json"
+    },
+    "text": "WK_NAAM"
+  } 
+},{
+  "name": "collectivism",
+  "scale": "linear",
+  "file": {
+    "name": "newerdata4.csv",
+    "url": "assets/newerdata4.csv"
+  },
+  "geoAreaId": "WK_CODE",
+  "mappedProperty": "ac tot col wijk",
+  "choroplethString": "YlOrRd[9]",
+  "displayStatus": "secondary",
+  "geoJSON": {
+    "file": {
+      "name": "UpdatedWijk.json",
+      "url": "assets/UpdatedWijk.json"
+    },
+    "text": "WK_NAAM"
+  } 
+},{
+  "name": "egalitarianism",
+  "scale": "linear",
+  "file": {
+    "name": "newerdata4.csv",
+    "url": "assets/newerdata4.csv"
+  },
+  "geoAreaId": "WK_CODE",
+  "mappedProperty": "ac tot ega wijk",
+  "choroplethString": "YlOrRd[9]",
+  "displayStatus": "secondary",
+  "geoJSON": {
+    "file": {
+      "name": "UpdatedWijk.json",
+      "url": "assets/UpdatedWijk.json"
+    },
+    "text": "WK_NAAM"
+  } 
+},{
+  "name": "fatalism",
+  "scale": "linear",
+  "file": {
+    "name": "newerdata4.csv",
+    "url": "assets/newerdata4.csv"
+  },
+  "geoAreaId": "WK_CODE",
+  "mappedProperty": "ac tot fat wijk",
+  "choroplethString": "YlOrRd[9]",
+  "displayStatus": "secondary",
+  "geoJSON": {
+    "file": {
+      "name": "UpdatedWijk.json",
+      "url": "assets/UpdatedWijk.json"
+    },
+    "text": "WK_NAAM"
+  } 
+},{
+    "name": "Biggest Party",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "biggest",
+    "choroplethString": "Politics[14]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Per Biggest party",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "max",
+    "choroplethString": "YlOrRd[9]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Leefbarometer 16",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "RLBMTR16",
+    "choroplethString": "GnBu[9]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Percentage neutral",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata.csv",
+      "url": "assets/newerdata.csv"
+    },
+    "geoAreaId": "id",
+    "mappedProperty": "Per neut MUN",
+    "choroplethString": "RdPu[9]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "municipalities.geojson",
+        "url": "assets/municipalities.geojson"
+      },
+      "text": "name"
+    }
+  }]
+}
