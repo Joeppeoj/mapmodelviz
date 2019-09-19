@@ -1,0 +1,261 @@
+{
+  "modelName": "Polarisation",
+  "allowFileUpload": true,
+  "activePolicyName": "Votings",
+
+  "playbackSpeed": 1000,
+
+  "jsonData": [{
+    "name": "Societal clustering",
+    "scale": "linear",
+    "file": {
+      "name": "politics3.csv",
+      "url": "assets/politics3.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "cat wijk",
+    "choroplethString": "Set1[6]",
+    "displayStatus": "primary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Biggest party district",
+    "scale": "linear",
+    "file": {
+      "name": "politics2.csv",
+      "url": "assets/politics2.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "biggest party name",
+    "choroplethString": "Politics[14]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Biggest party percentage district",
+    "scale": "linear",
+    "file": {
+      "name": "politics2.csv",
+      "url": "assets/politics2.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "biggest party",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Biggest Party neighborhood",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "biggest",
+    "choroplethString": "Politics[14]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Biggest party percentage neighborhood",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "max",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Leefbarometer 16",
+    "scale": "linear",
+    "file": {
+      "name": "newerdata3.csv",
+      "url": "assets/newerdata3.csv"
+    },
+    "geoAreaId": "BU_CODE",
+    "mappedProperty": "RLBMTR16",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedBuurt.json",
+        "url": "assets/UpdatedBuurt.json"
+      },
+      "text": "BU_NAAM"
+    }
+  },{
+    "name": "Individualism",
+    "scale": "linear",
+    "file": {
+      "name": "politics3.csv",
+      "url": "assets/politics3.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "per ind pot",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Egalitarianism",
+    "scale": "linear",
+    "file": {
+      "name": "politics3.csv",
+      "url": "assets/politics3.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "per ega pot",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Collectivism",
+    "scale": "linear",
+    "file": {
+      "name": "politics3.csv",
+      "url": "assets/politics3.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "per col pot",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Fatalism",
+    "scale": "linear",
+    "file": {
+      "name": "politics3.csv",
+      "url": "assets/politics3.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "per fat pot",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Voting individualism",
+    "scale": "linear",
+    "file": {
+      "name": "politics2.csv",
+      "url": "assets/politics2.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "act ind per",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Voting egalitarianism",
+    "scale": "linear",
+    "file": {
+      "name": "politics2.csv",
+      "url": "assets/politics2.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "act ega per",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Voting collectivism",
+    "scale": "linear",
+    "file": {
+      "name": "politics2.csv",
+      "url": "assets/politics2.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "act col per",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  },{
+    "name": "Voting fatalism",
+    "scale": "linear",
+    "file": {
+      "name": "politics2.csv",
+      "url": "assets/politics2.csv"
+    },
+    "geoAreaId": "WK_CODE",
+    "mappedProperty": "act fat per",
+    "choroplethString": "RdYlGn[10]",
+    "displayStatus": "secondary",
+    "geoJSON": {
+      "file": {
+        "name": "UpdatedWijk.json",
+        "url": "assets/UpdatedWijk.json"
+      },
+      "text": "WK_NAAM"
+    }
+  }]
+}
